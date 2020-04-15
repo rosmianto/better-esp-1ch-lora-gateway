@@ -38,6 +38,24 @@
 //
 #if A_SERVER==1
 
+void wwwFile(String fn);
+void buttonDocu();
+void buttonLog(); 
+static void wwwButtons();
+static void setVariables(const char *cmd, const char *arg);
+static void openWebPage();
+static void gatewaySettings(); 
+static void statisticsData();
+static void messageHistory(); 
+static void nodeHistory(); 
+void monitorData(); 
+static void wifiConfig();
+static void systemStatus();
+static void interruptData();
+void setupWWW(); 
+void sendWebPage(const char *cmd, const char *arg);
+static void websiteFooter();
+
 // ================================================================================
 // WEBSERVER DECLARATIONS 
 // ================================================================================

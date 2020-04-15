@@ -1,4 +1,4 @@
-
+#include <Arduino.h>
 
 #if defined (ARDUINO_ARCH_ESP32) || defined(ESP32)
 #	define ESP32_ARCH 1
@@ -13,18 +13,17 @@
 // The followion file contains most of the definitions
 // used in other files. It should be the first file.
 #include "configGway.h"										// contains the configuration data of GWay
-#include "configNode.h"										// Contains the personal data of Wifi etc.
+// #include "configNode.h"										// Contains the personal data of Wifi etc.
 
-#include <Esp.h>											// ESP8266 specific IDE functions
-#include <string.h>
+#include <cstdlib>
+#include <cstring>
+#include <fcntl.h>
 #include <stdio.h>
+#include <string.h>
+#include <string>											// C++ specific string functions
+#include <sys/time.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <fcntl.h>
-#include <cstdlib>
-#include <sys/time.h>
-#include <cstring>
-#include <string>											// C++ specific string functions
 
 #include <SPI.h>											// For the RFM95 bus
 #include <TimeLib.h>										// http://playground.arduino.cc/code/time
@@ -237,6 +236,22 @@ void pullData();														// _udpSemtech.ino
 #endif
 
 
+#include "configNode.h"										// Contains the personal data of Wifi etc.
+// Ino files
+#include "systems/_gatewayMgt.ino"
+#include "systems/_oLED.ino"
+#include "systems/_otaServer.ino"
+#include "systems/_repeater.ino"
+#include "systems/_sensor.ino"
+#include "systems/_tcpTTN.ino"
+#include "systems/_utils.ino"
+#include "systems/_loraFiles.ino"
+#include "systems/_WiFi.ino"
+#include "systems/_udpSemtech.ino"
+#include "systems/_txRx.ino"
+#include "systems/_loraModem.ino"
+#include "systems/_wwwServer.ino"
+#include "systems/_stateMachine.ino"
 
 // ============================================================================
 // MAIN PROGRAM CODE (SETUP AND LOOP)

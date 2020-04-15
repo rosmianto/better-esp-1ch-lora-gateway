@@ -122,7 +122,7 @@ struct wpas {
 // below. This is needed to get the gateway working
 //
 wpas wpa[] = {
-	{ "yourSSID", "yourPassword" },
+	{ "Home Network", "Sup3rsecret#" },
 	{ "Your2SSID", "your2Password" }
 };
 

@@ -238,7 +238,7 @@
 // Gateway Ident definitions. Where is the gateway located?
 #define _DESCRIPTION "ESP Gateway"			// Name of the gateway
 #define _EMAIL "mw12554@hotmail.com"		// Owner
-#define _PLATFORM "ESP8266"
+#define _PLATFORM "ESP32"
 #define _LAT 52.237367
 #define _LON 5.978654
 #define _ALT 14								// Altitude

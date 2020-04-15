@@ -17,6 +17,22 @@
 
 
 #if _MONITOR>=1
+
+int initMonitor(struct moniLine *monitor); 
+void id_print (String id, String val); 
+void initConfig(struct espGwayConfig *c);
+int readGwayCfg(const char *fn, struct espGwayConfig *c);
+int readConfig(const char *fn, struct espGwayConfig *c);
+int writeGwayCfg(const char *fn, struct espGwayConfig *c);
+int writeConfig(const char *fn, struct espGwayConfig *c);
+int addLog(const unsigned char * line, int cnt); 
+void printLog();
+int initSeen(struct nodeSeen *listSeen); 
+int readSeen(const char *fn, struct nodeSeen *listSeen);
+int writeSeen(const char *fn, struct nodeSeen *listSeen);
+int printSeen(struct nodeSeen *listSeen);
+int addSeen(struct nodeSeen *listSeen, struct stat_t stat); 
+
 // ----------------------------------------------------------------------------
 // LoRa Monitor logging code.
 // Define one print function and depending on the logging parameter output
