@@ -49,7 +49,7 @@
 //
 // ----------------------------------------------------------------------------------------
 #if _MUTEX==1
-	void CreateMutux(int *mutex) {
+	void CreateMutex(int *mutex) {
 		*mutex=1;
 	}
 

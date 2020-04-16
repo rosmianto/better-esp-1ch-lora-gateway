@@ -13,7 +13,6 @@
 // The followion file contains most of the definitions
 // used in other files. It should be the first file.
 #include "configGway.h"										// contains the configuration data of GWay
-// #include "configNode.h"										// Contains the personal data of Wifi etc.
 
 #include <cstdlib>
 #include <cstring>
@@ -230,7 +229,7 @@ void sendstat();														// _udpSemtech.ino
 void pullData();														// _udpSemtech.ino
 
 #if _MUTEX==1
-	void ICACHE_FLASH_ATTR CreateMutux(int *mutex);
+	void ICACHE_FLASH_ATTR CreateMutex(int *mutex);
 	bool ICACHE_FLASH_ATTR GetMutex(int *mutex);
 	void ICACHE_FLASH_ATTR ReleaseMutex(int *mutex);
 #endif
